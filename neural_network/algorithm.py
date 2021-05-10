@@ -40,9 +40,6 @@ def minimum_distance(expert_vectors, vector):
     min_dist = math.inf
     for i in range(len(expert_vectors)):
         dist = 0
-        a = 'намана'
-        if vector == expert_vectors[i]:
-            a = 'ебаный стыд'
         for j in range(len(vector)):  # находим расстояния
             dist += (vector[j] - expert_vectors[i][j]) ** 2
         dist = math.sqrt(dist)
